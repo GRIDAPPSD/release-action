@@ -1,0 +1,23 @@
+name: My Awesome Action
+description: This action will update the current version of a project, build wheel files from python, deploy those files to pypi, and commit the newest version to the branch.
+author: Craig Allwardt
+
+branding:
+  icon: check
+  color: blue
+
+runs:
+  using: docker
+  image: Dockerfile
+
+# == inputs and outputs ==
+
+inputs:
+  name:
+    required: false
+    description: the person/thing you want to greet
+    default: World
+
+outputs:
+  phrase:
+    description: output variable
