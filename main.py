@@ -23,6 +23,7 @@ def main(args: List[str]) -> None:
         print(p)
 
     print("I am here 2")
+    io.write_to_output({"phrase": f"Hello {os.environ.get('INPUT_NAME', 'World')}"})
 
 
 if __name__ == "__main__":
