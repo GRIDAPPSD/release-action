@@ -17,8 +17,12 @@ def main(args: List[str]) -> None:
 
     # you can write to output like:
     #   io.write_to_output({var: val, ...})
+    #io.write_to_output()
+    print("I am here")
+    for p in os.environ:
+        print(p)
 
-    pass
+    print("I am here 2")
 
 
 if __name__ == "__main__":
